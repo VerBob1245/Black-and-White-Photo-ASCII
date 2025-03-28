@@ -1,0 +1,12 @@
+// Pseudo-code
+function convertToBinaryImage(imageData, threshold = 128) {
+  binaryImage = []
+  for each pixel in imageData {
+    grayscale = (pixel.R + pixel.G + pixel.B) / 3
+    if (grayscale >= threshold) binaryValue = 1
+    else binaryValue = 0
+    binaryImage []= binaryValue
+  }
+  return binaryImage
+}
+
